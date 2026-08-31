@@ -8,74 +8,47 @@
 </head>
 <body>
     <nav class="navbar">
+      <div class="logo">
+        <img src="logo.png" alt="logo">
+      </div>
+      <ul class="nav-links">
+        <li><a>Home</a></li>
+        <li><a>About</a></li>
+        <li><a>Portfolio</a></li>
+        <li><a>Services</a></li>
+        <li><a>Contact Us</a></li>
+      </ul>
+    </nav>
 
-  <div class="logo">
-    <img src="logo.png" alt="logo">
-  </div>
-
-  <ul class="nav-links">
-    <li><a>Home</a></li>
-    <li><a>About</a></li>
-    <li><a>Portfolio</a></li>
-    <li><a>Services</a></li>
-    <li><a>Contact Us</a></li>
-  </ul>
-
-</nav>
-
-<div class="search-bar">
-  <input type="text" placeholder="Search food" autocomplete="off" id="search-input" oninput="fetchData(this.value)">
-
-  
-</div>
-
-
-<!-- food -->
-<div class="FoodContainer"></div>
-
- <!-- model box -->
-<div class="modalBox" style="display: none";>
-  <div class="modalContent">
-
-    <div class="left">
-      <img id="modalImg" />
+    <div class="search-bar">
+      <input type="text" placeholder="Search food" autocomplete="off" id="search-input" oninput="fetchData(this.value)">
     </div>
 
-    <div class="right">
-       <p class="heading">Recipe Name:</p>
-      <h2 id="modalTitle"></h2>
-      <p class="heading">Country:</p>
-      <h4 id="modalCountry"></h4>
-      <p class="heading">Instruction:</p>
-      <p id="modalInstructions"></p>
-      <p class="heading">Ingredients:</p>
-      <ul id="modalIngredients"></ul>
+    <!-- food -->
+    <div class="foodContainer"></div>
 
-     
-    
+    <!-- modal box -->
+    <div class="modalBox" style="display: none;">
+      <div class="modalContent">
+        <div class="closeBtn" onclick="closeModal()">&times;</div>
+        
+        <div class="left">
+          <img id="modalImg" alt="Recipe Image" />
+        </div>
+
+        <div class="right">
+          <p class="heading">Recipe Name:</p>
+          <h2 id="modalTitle"></h2>
+          <p class="heading">Country:</p>
+          <h4 id="modalCountry"></h4>
+          <p class="heading">Instruction:</p>
+          <p id="modalInstructions"></p>
+          <p class="heading">Ingredients:</p>
+          <ul id="modalIngredients"></ul>
+        </div>
+      </div>
     </div>
 
-  </div>
-</div>
-
-
-
-
-
-
-
-
-
-<script src="script.js"></script>
-    
+    <script src="script.js"></script>
 </body>
-
 </html>
-
-
-
-  
-
- 
-
- 
