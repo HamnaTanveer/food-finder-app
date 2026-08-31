@@ -1,0 +1,81 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Search API's</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+
+  <div class="logo">
+    <img src="logo.png" alt="logo">
+  </div>
+
+  <ul class="nav-links">
+    <li><a>Home</a></li>
+    <li><a>About</a></li>
+    <li><a>Portfolio</a></li>
+    <li><a>Services</a></li>
+    <li><a>Contact Us</a></li>
+  </ul>
+
+</nav>
+
+<div class="search-bar">
+  <input type="text" placeholder="Search food" autocomplete="off" id="search-input" oninput="fetchData(this.value)">
+
+  
+</div>
+
+
+<!-- food -->
+<div class="FoodContainer"></div>
+
+ <!-- model box -->
+<div class="modalBox" style="display: none";>
+  <div class="modalContent">
+
+    <div class="left">
+      <img id="modalImg" />
+    </div>
+
+    <div class="right">
+       <p class="heading">Recipe Name:</p>
+      <h2 id="modalTitle"></h2>
+      <p class="heading">Country:</p>
+      <h4 id="modalCountry"></h4>
+      <p class="heading">Instruction:</p>
+      <p id="modalInstructions"></p>
+      <p class="heading">Ingredients:</p>
+      <ul id="modalIngredients"></ul>
+
+     
+    
+    </div>
+
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+<script src="script.js"></script>
+    
+</body>
+
+</html>
+
+
+
+  
+
+ 
+
+ 
